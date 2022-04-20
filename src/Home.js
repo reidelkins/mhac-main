@@ -15,10 +15,10 @@ export default function Home() {
   const [showDropdown3, setShowDropdown3] = useState(false)
   const [showDropdown4, setShowDropdown4] = useState(false)
   const [showDropdown5, setShowDropdown5] = useState(false)
-  const [preMint, setPreMint] = useState(true)
+  const [preMint, setPreMint] = useState(false)
   const [postMint, setPostMint] = useState(false)
   const [phase1, setPhase1] = useState(false)
-  const [phase2, setPhase2] = useState(false)
+  const [phase2, setPhase2] = useState(true)
   const [phase3, setPhase3] = useState(false)
   const [loading, setLoading] = useState(true)
   const [toTop, setToTop] = useState("toTop none")
@@ -56,18 +56,18 @@ export default function Home() {
       if (y < 150) {
         if (scrollingUp != "init") {
           setScrollingUp("init")
-          console.log("init")
+          //console.log("init")
         }
       } else {
         if (y > window.scrollY) {
           if (scrollingUp != true) {
             setScrollingUp(true)
-            console.log("yes")
+            //console.log("yes")
           }
         } else if (y < window.scrollY) {
           if (scrollingUp != false) {
             setScrollingUp(false)
-            console.log("no")
+            //console.log("no")
           }
         }
       }
@@ -110,17 +110,7 @@ export default function Home() {
             data-aos-duration="1000"
             onClick={() => setDropdown(!dropdown)}
           >
-            <Link
-              activeClass="active"
-              to="storyline"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-              onClick={() => setDropdown(!dropdown)}
-            >
-              Storyline
-            </Link>
+            <a href="https://airport.milehighapeclub.com/">Airport (Staking V2)</a>
           </button>
           <button
             className="navLink"
@@ -146,7 +136,7 @@ export default function Home() {
             data-aos-duration="1000"
             onClick={() => setDropdown(!dropdown)}
           >
-            <a href="/merchandise">Merchandise</a>
+            <a href="https://milez.milehighapeclub.com/">$Milez Store</a>
           </button>
           <button
             className="navLink"
@@ -191,17 +181,9 @@ export default function Home() {
               className="navLink"
               data-aos="zoom-in"
               data-aos-duration="1000"
+              onClick={() => setDropdown(!dropdown)}
             >
-              <Link
-                activeClass="active"
-                to="storyline"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                Storyline
-              </Link>
+              <a href="https://airport.milehighapeclub.com/">Airport (Staking V2)</a>
             </button>
             <button
               className="navLink"
@@ -232,7 +214,7 @@ export default function Home() {
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
-              <a href="/merchandise">Merchandise</a>
+              <a href="https://milez.milehighapeclub.com/">$Milez Store</a>
             </button>
             <button
               className="navLink"
@@ -253,17 +235,9 @@ export default function Home() {
               className="navLink"
               data-aos="zoom-in"
               data-aos-duration="1000"
+              onClick={() => setDropdown(!dropdown)}
             >
-              <Link
-                activeClass="active"
-                to="storyline"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                Storyline
-              </Link>
+              <a href="https://airport.milehighapeclub.com/">Airport (Staking V2)</a>
             </button>
             <button
               className="navLink"
@@ -294,7 +268,7 @@ export default function Home() {
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
-              <a href="/merchandise">Merchandise</a>
+              <a href="https://milez.milehighapeclub.com/">$Milez Store</a>
             </button>
             <button
               className="navLink"
@@ -315,17 +289,9 @@ export default function Home() {
               className="navLink"
               data-aos="zoom-in"
               data-aos-duration="1000"
+              onClick={() => setDropdown(!dropdown)}
             >
-              <Link
-                activeClass="active"
-                to="storyline"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                Storyline
-              </Link>
+              <a href="https://airport.milehighapeclub.com/">Airport (Staking V2)</a>
             </button>
             <button
               className="navLink"
@@ -356,7 +322,7 @@ export default function Home() {
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
-              <a href="/merchandise">Merchandise</a>
+              <a href="https://milez.milehighapeclub.com/">$Milez Store</a>
             </button>
             <button
               className="navLink"
@@ -620,133 +586,112 @@ export default function Home() {
               ROADMAP
             </h1>
             <h1 className="title" data-aos="fade-up" data-aos-duration="1000">
-              Flightpath
+              Flightpath 2.0
             </h1>
             <div className="flightContainer">
               {preMint ?
                   <ul>
                     <li>
-                      During the weeks leading up to mint, we will continue to
-                      broaden our reach into not only the Solana ecosystem but also
-                      all branches of the NFT space.
+                      [x] Creative Contests for Whitelist
                     </li>
                     <li>
-                      We will hold creative contests to grant whitelist roles to our
-                      passengers. This will not only pertain to those with artistic
-                      abilities, but to all community members who have varying
-                      skillsets.
+                      [x] Generate Sky-High Levels of Hype
                     </li>
+                    
                   </ul>
               : null }
               {postMint ?
                   <ul>
-                    <li>We will be listing on MonkeLabs.</li>
                     <li>
-                      Integrate a verification system within the discord to
-                      establish a DAO.
+                      [x] Magic Eden Listing (https://magiceden.io/marketplace/mile_high_ape_club)
                     </li>
                     <li>
-                      Hold contests to give away apes held by the team for
-                      promotional purposes as well as exclusive merchandise only to
-                      be purchased by verified holders.
+                      [x] Discord Verification and HijackeDAO Formation
                     </li>
                     <li>
-                      The MHAC team will organize a party in Miami, FL to meet and celebrate the members of the MHAC. We can't wait to
-                      meet everyone who has helped make this project possible and
-                      network and discuss the future of the MHAC.
+                      [x] Release of Staking V1 for $Milez with help from Doge Capital
+                    </li>
+                    <li>
+                      [x] Release Episode 1 of MHAC’s Animated Series
+                    </li>
+                    <li>
+                      [x] Jet-A Serum Reveal and $Milez Raffles
+                    </li>
+                    <li>
+                      [x] Partner with InceptionAIO for Discord Moderation, Marketing, and Development Support
                     </li>
                   </ul>
               : null }
               {phase1 ?
                   <ul>
-                    <li>Token & Staking system</li>
+                    <li>[ ] Hijacked Ape User Manual (Intro to Hijacked)</li>
                     <li>
-                      Incentivize holding by establishing a staking system. Users
-                      are rewarded in our token for holding their Ape.
-                    </li>
-                    <li>Develop an all Inclusive Website</li>
-                    <li>
-                      The MHAC has a vision to be at the forefront of advancement in
-                      this space. We want to create an all inclusive website that
-                      branches all of your favorite NFT analytic tools, such as
-                      rarity values, and purchase options, into one.
+                      [ ] All-Inclusive Island Getaway for 2 Giveaway
                     </li>
                     <li>
-                      This will give users the ability to know everything about a
-                      project before they APE in. More news to follow.
+                      [ ] Further Development of Animated Series
                     </li>
-                    <li>Animated Series</li>
                     <li>
-                      Become more immersed in the Ape Air company by finding out why
-                      our apes came to be on the wrong side of the cockpit door.
-                      Some apes decide to do the right thing, others do the exact
-                      opposite.
+                      [ ] Launch of Team-Based P2E Idle RPG Game
+                    </li>
+                    <li>
+                      [ ] MHAC Miami Meet Up at a Private Hangar
+                    </li>
+                    <li>
+                      [ ] DAO Restructuring (WL Scouts, Mint Reviews, DAO Vault)
                     </li>
                   </ul>
               : null }
               {phase2 ?
                   <ul>
-                    <li>Hijacked Apes</li>
+                    <li>[ ] Begin Beta Testing on Real Life Marketplace within our Admiral Club</li>
                     <li>
-                      By using our token, you will be able to purchase "something"
-                      using our token and SOL to change your ape into something
-                      never seen before. We will let the community help decide where
-                      this road will take us.
+                      [ ] Begin Development of MHAC Cookies to be sold in Major Airports and Airlines
                     </li>
-                    <li>Airdrops</li>
-                    <li>
-                      Ape holders will receive a special surprise in their wallets.
-                      Its simple - hold and cherish your ape. Always comply with
-                      Flight Attendants.
-                    </li>
-                    <li>Further Development of Animated Series</li>
-                    <li>
-                      "As the community grows in size, more editions of our journey
-                      through the sky will begin its descent. The future of MHAC is
-                      community driven, every ape has a voice - just ring your call
-                      button."
-                    </li>
+                    <li>[ ] Further Development of our MHAC animated series</li>
                   </ul>
               : null }
               {phase3 ?
                   <ul>
-                    <li>Apes in the Metaverse</li>
+                    <li>[ ] Continued Development of our Animated Series (Potentially Spin Offs as well)</li>
                     <li>
-                      The MHAC will purchase land in the Metaverse to develop a
-                      place for members of the club to come and hang out,
-                      participate in fun activities, and interact with other members
-                      of the Metaverse while interacting with others. We may even
-                      see a MHAC airline or airport!
+                      [ ] Full Launch of Airline Travel Marketplace
+                    </li>
+                    <li>
+                      [ ] Full Scale Production and Distribution of MHAC Cookies Worldwide to Major Airlines and Airports
+                    </li>
+                    <li>
+                      [ ] Roadmap3.0 Release
                     </li>
                   </ul>
               : null }
               <img style={{width: "100%", marginBottom:"-4px"}} src="/images/topflight.png" />
               <div className="flightWrapper">
-                <div className="flight" onMouseEnter={() => setPreMint(true)} onMouseLeave={() => setPreMint(false)}>
+                <div className="flight" onMouseEnter={() => {setPreMint(true), setPostMint(false), setPhase1(false), setPhase2(false), setPhase3(false)}}>
                   <img src={preMint ? "/images/premint-2.png" : "/images/premint.png"} />
                 </div>
                 <div className="flight">
                   <img src="/images/1.png" />
                 </div>
-                <div className="flight" onMouseEnter={() => {setPostMint(true), setPreMint(false)}} onMouseLeave={() => setPostMint(false)}>
+                <div className="flight" onMouseEnter={() => {setPreMint(false), setPostMint(true), setPhase1(false), setPhase2(false), setPhase3(false)}}>
                   <img src={postMint ? "/images/postmint-2.png" : "/images/postmint.png"} />
                 </div>
                 <div className="flight">
                   <img src="/images/2.png" />
                 </div>
-                <div className="flight" onMouseEnter={() => {setPhase1(true), setPreMint(false)}} onMouseLeave={() => setPhase1(false)}>
+                <div className="flight" onMouseEnter={() => {setPreMint(false), setPostMint(false), setPhase1(true), setPhase2(false), setPhase3(false)}}>
                   <img src={phase1 ? "/images/phase1-2.png" : "/images/phase1.png"} />
                 </div>
                 <div className="flight">
                   <img src="/images/3.png" />
                 </div>
-                <div className="flight" onMouseEnter={() => {setPhase2(true), setPreMint(false)}} onMouseLeave={() => setPhase2(false)}>
+                <div className="flight" onMouseEnter={() => {setPreMint(false), setPostMint(false), setPhase1(false), setPhase2(true), setPhase3(false) }}>
                   <img src={phase2 ? "/images/phase2-2.png" : "/images/phase2.png"} />
                 </div>
                 <div className="flight">
                   <img src="/images/4.png" />
                 </div>
-                <div className="flight" onMouseEnter={() => {setPhase3(true), setPreMint(false)}} onMouseLeave={() => setPhase3(false)}>
+                <div className="flight" onMouseEnter={() => {setPreMint(false), setPostMint(false), setPhase1(false), setPhase2(false), setPhase3(true)}}>
                   <img src={phase3 ? "/images/phase3-2.png" : "/images/phase3.png"} />
                 </div>
                 <div className="flight">
@@ -759,23 +704,14 @@ export default function Home() {
               <h1 className="title">The Founders</h1>
               <div className="teamInner">
                 <div className="teamMember">
-                  <img src="team/Maverick.png" />
+                  <img src="team/Chris.png" />
                   <div>
-                    <h1>Maverick</h1>
-                    <h2>Creator / Creative Direction</h2>
+                    <h1>Crypto Chris</h1>
+                    <h2>CEO</h2>
                     <div className="line" />
                     <h3>
-                      767 Cargo Pilot, Options & Crypto Trader, Clothing Design
+                      Serial entrepreneur, business consultant, leader
                     </h3>
-                  </div>
-                </div>
-                <div className="teamMember">
-                  <img src="team/Iceman.png" />
-                  <div>
-                  <h1>Iceman</h1>
-                    <h2>Co-Creator, Community & Communications Lead</h2>
-                    <div className="line" />
-                    <h3>Airline Pilot, Crypto Degenerate, NFT Investor</h3>
                   </div>
                 </div>
                 <div className="teamMember">
@@ -796,13 +732,33 @@ export default function Home() {
                     <h3>Dapper Ducks Co-Founder, Father, NFT Enthusiast</h3>
                   </div>
                 </div>
+              </div>
+              <div className="teamInner">
                 <div className="teamMember">
                   <img src="team/Humble.png" />
                   <div>
-                    <h1>Humble Ape</h1>
-                    <h2>MHAC Discord Server Creator, Community Management, & Cybersecurity</h2>
+                    <h1>Humble Ape (Anthony)</h1>
+                    <h2>COO, Community Management, Creative director, and Cybersecurity. </h2>
                     <div className="line" />
-                    <h3>NFT/Crypto enthusiast, dog father, and man of God. Cybersecurity/marketing background, and a long-time friend of Maverick Ape (Founder).</h3>
+                    <h3>Man of God, NFT, and Crypto Enthusiast.</h3>
+                  </div>
+                </div>
+                <div className="teamMember">
+                  <img src="team/BottomRoller.png" />
+                  <div>
+                    <h1>Bottom Roller</h1>
+                    <h2>The Dev</h2>
+                    <div className="line" />
+                    <h3>Cool guy that likes tech stuff.</h3>
+                  </div>
+                </div>
+                <div className="teamMember">
+                  <img src="team/Bahm.png" />
+                  <div>
+                    <h1>Bahm Ape</h1>
+                    <h2>Executive Manager, Marketing</h2>
+                    <div className="line" />
+                    <h3>NFT Enthusiast, Organizational Queen, Dog Mother and Sci-Fi aficionado.</h3>
                   </div>
                 </div>
               </div>
@@ -842,7 +798,7 @@ export default function Home() {
               </div>
               {showDropdown2 ? (
                 <h2>
-                  The total supply will be 7,700 Apes. 100 of those apes will be
+                  The total supply is be 6,600 Apes. 100 of those apes will be
                   reserved by the team for promotional giveaways.
                 </h2>
               ) : null}
