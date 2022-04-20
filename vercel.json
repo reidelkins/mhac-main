@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    { "source": "//staking.milehighapeclub.com/", "destination": "https://mhac-staking-ui.vercel.app/", "permanent": true }
+  ]
+}

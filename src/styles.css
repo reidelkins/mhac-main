@@ -1,0 +1,803 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+/* -------------------------------------- Globals -------------------------------------- */
+html {
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #efefef;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(170, 170, 170);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(124, 124, 124);
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-size: cover;
+  background: radial-gradient(#cde3ff, #5da5ff);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+button {
+  margin: 0;
+  font-family: "Roboto Condensed";
+  text-transform: uppercase;
+}
+.App {
+  font-family: "Roboto Condensed";
+  text-align: center;
+  position: relative;
+}
+/* -------------------------------------- Navbar -------------------------------------- */
+.mobileNav, .mobileNavinit, .mobileNavnone {
+  display: none;
+}
+.navBarinit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 50;
+}
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 50;
+  width: 100%;
+  background: #00000030;
+  backdrop-filter: blur(10px);
+  animation: fadeIn .5s linear;
+}
+.navBarnone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 50;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  animation: fadeOut .5s linear;
+}
+.logo {
+  width: 180px;
+  padding: 10px;
+}
+.navLink {
+  width: 225px;
+  height: 35px;
+  background: #efefef;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 17px;
+  cursor: pointer;
+  margin: 0 50px;
+  border: none;
+  font-family: "Roboto Condensed";
+  padding: 0;
+  position: relative;
+}
+.navLink:hover {
+  margin-top: -5px;
+}
+.navLink a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  text-decoration: none;
+  color: #000;
+}
+/* -------------------------------------- Header Section -------------------------------------- */
+.monkey {
+  position: absolute;
+  background-image: url("./images/ape.gif");
+  box-shadow: 3000px 3000px 3000px inset #0d141ae8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+}
+.header {
+  position: relative;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+.headerBody {
+  text-align: left;
+  width: 66%;
+  margin: 0 auto;
+}
+.headerBody h1 {
+  color: #efefef;
+  font-weight: 800;
+  font-size: 73px;
+  line-height: 73px;
+  text-shadow: 0 0 10px #00000075;
+  margin: 30px 0;
+  font-family: "Roboto Condensed";
+}
+.headerBody h2 {
+  color: #adadad;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 40px;
+  text-shadow: 0 0 10px #00000075;
+  margin: 30px 0;
+  font-family: "Roboto Condensed";
+}
+.socials {
+  display: flex;
+  column-gap: 20px;
+  margin: 30px 0;
+}
+.socials img {
+  width: 40px;
+}
+.socials img:hover {
+  margin-top: -5px;
+}
+.body {
+  background: #fff#efefef;
+}
+/* --------------------------------------Mint Section -------------------------------------- */
+.mint {
+  margin-top: -125px;
+  position: relative;
+  z-index: 11;
+}
+.mintInner {
+  width: 66%;
+  margin: 0 auto;
+}
+.innerMint {
+  display: flex;
+}
+.innerMint h2 {
+  padding: 10px 100px;
+}
+.swiper {
+  width: 100% !important;
+}
+.swiper-slide {
+  background-position: center !important;
+  background-size: cover !important;
+  width: 250px !important;
+  height: 250px !important;
+}
+.swiper-slide img {
+  display: block !important;
+  width: 100% !important;
+  border-radius: 5px;
+}
+/* -------------------------------------- Storyline Section -------------------------------------- */
+.storyline {
+  padding: 75px 0;
+  margin: 0 auto;
+}
+.storyline .title {
+  padding: 50px;
+  padding: 0 0 50px;
+}
+.storyline .section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66%;
+  margin: auto;
+}
+.storyline .section div {
+  width: 50%;
+}
+.storyline .section h1 {
+  font-size: 13px;
+}
+.right {
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #00000070;
+  border: 2px solid rgb(255 255 255);
+  float: left;
+  margin: -20px 0 -20px -50px;
+}
+.left {
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #00000070;
+  border: 2px solid rgb(255 255 255);
+  float: right;
+  margin: -20px -50px -20px 0;
+}
+.rightText {
+  padding-left: 70px;
+  text-align: left;
+}
+.leftText {
+  padding-right: 70px;
+  text-align: right;
+}
+/* -------------------------------------- Roadmap Section -------------------------------------- */
+.roadmap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 66%;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+.roadmap h3 {
+  text-align: left;
+}
+.roadmap h4 {
+  text-align: left;
+}
+.flightContainer {
+  position: relative;
+  padding: 40px 0;
+}
+.flightContainer ul {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+}
+.flightWrapper {
+  display: table;
+  border-collapse: collapse;
+  width: 100.0%;
+}
+.flight {
+  display: table-cell;
+  vertical-align: top;
+}
+.flight img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* -------------------------------------- Team Section -------------------------------------- */
+.team {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 0;
+}
+.teamInner {
+  display: flex;
+  justify-content: space-around;
+  width: 66%;
+}
+.teamMember {
+  padding: 50px;
+  background: #00000024;
+  backdrop-filter: blur(10px);
+  margin: 10px;
+  border-radius: 10px;
+}
+.teamMember:hover {
+  box-shadow: 0 0 10px #ffffffc4;
+  transform: translateY(-5px);
+}
+.teamMember img {
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px #00000020;
+}
+.teamMember h1 {
+  color: #fff;
+  font-weight: 600;
+}
+.teamMember h2 {
+  font-weight: 800;
+  font-size: 14px;
+}
+.teamMember h3 {
+  font-weight: 400;
+  font-size: 14px;
+}
+.teamMember .line {
+  width: 100%;
+  max-width: none;
+}
+/* -------------------------------------- FAQ Section -------------------------------------- */
+.faq {
+  padding: 75px 0;
+}
+.question {
+  margin: 0 auto;
+  width: 66%;
+  border-radius: 10px;
+  position: relative;
+}
+.question h4 {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+}
+.question h1 {
+  cursor: pointer;
+  position: relative;
+  font-size: 20px;
+  padding: 5px;
+}
+.question h2 {
+  font-size: 14px;
+  color: #181818;
+  font-weight: 500;
+  opacity: 1;
+  animation: show 0.3s linear;
+  animation-iteration-count: 1;
+  padding: 10px;
+}
+.line {
+  width: 66%;
+  margin: auto;
+  border-bottom: 1px solid #000;
+  margin: 10px auto;
+}
+.question div img {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.arrow {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+/* -------------------------------------- Footer -------------------------------------- */
+.footer {
+  margin-top: 75px;
+  height: 100px;
+  background: #0a1118;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer h1 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* -------------------------------------- Misc Global -------------------------------------- */
+.body {
+  position: relative;
+  z-index: 1;
+}
+.title {
+  text-align: center;
+  font-size: 45px;
+  padding: 0 0 20px;
+}
+.subTitle {
+  font-size: 16px;
+}
+.clouds {    position: absolute;
+  background: url("./images/clouds.png");
+  animation: clouds 20s linear infinite;
+  opacity: 0.2;
+  max-width: 200%;
+  min-width: 200%;
+  min-height: 100%;
+  z-index: 1;
+  top: 0;
+}
+li {
+  text-align: left;
+  font-family: "Roboto Condensed";
+  margin: auto 0;
+  font-size: 18px;
+  list-style-type: disclosure-closed;
+}
+.loading {
+  margin: auto;
+  align-items: center;
+  animation: rotate 1s linear infinite;
+}
+.swiper-container {
+  width: 750px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  width: 300px;
+}
+.toTop {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  border: 0;
+  background: #fff;
+  color: #000;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.none {
+  display: none;
+}
+.show {
+  opacity: 1;
+  animation: fadeIn 1s ease-in-out;
+}
+.hide {
+  opacity: 0;
+  animation: fadeOut 1s ease-in-out;
+}
+.buttonWrapper {
+  margin: 0 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width:80px;
+  cursor: pointer;
+  transition: all .5 ease-in-out;
+}
+.hamburger {
+  width: 40px;
+  height: 4px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+}
+.hamburger::before, .hamburger::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+}
+.hamburger::before {
+  transform: translate(-50%, -16px);
+}
+.hamburger::after {
+  transform: translate(-50%, 16px);
+}
+
+.buttonWrapper.open .hamburger {
+  transform: translateX(-50px);
+  background: transparent;
+}
+.buttonWrapper.open .hamburger::before {
+  transform: rotate(45deg) translate(20px,-20px);
+}
+.buttonWrapper.open .hamburger::after {
+  transform: rotate(-45deg) translate(20px,20px);
+}
+
+/* -------------------------------------- Coming Soon Page -------------------------------------- */
+.construction {
+  position: fixed;
+  max-width: 100vw;
+  width: 100vw;
+  top: -50%;
+  left: 0;
+}
+.comingsoon {
+  min-height: 100vh;
+}
+.comingsoon .footer {
+  margin-top: 75px;
+  height: 100px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* -------------------------------------- Animations -------------------------------------- */
+@keyframes clouds {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 0vw;
+  }
+}
+@keyframes show {
+  from {
+    padding: 0px;
+    margin: -10px;
+    opacity: 0;
+  }
+  to {
+    padding: 10px;
+    opacity: 1;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@media (max-width: 1650px) {
+  li {
+    font-size: 14px;
+  }
+  .teamMember {
+    padding: 20px;
+  }
+}
+@media (max-width: 1450px) {
+  .roadmap, .teamInner, .mintInner, .header {
+    width: 80%;
+  }
+  .construction {
+    position: fixed;
+    max-width: 100vw;
+    width: 100vw;
+    left: 0;
+    top: 0;
+  }
+}
+@media (max-width: 1250px) {
+  .teamInner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .teamMember {
+    display: flex;
+  }
+  .navLink {
+    width: 150px;
+    margin: 0 25px;
+  }
+  .teamMember div {
+    margin: auto;
+    max-width: 60%;
+  }
+  .teamMember div h1, .teamMember div h2, .teamMember div h3 {
+    padding: 5px;
+  }
+  .teamMember img {
+    width: 150px;
+  }
+  .left {
+    margin: 0px -50px 0px 0;
+  }
+}
+@media (max-width: 1000px) {
+  .roadmap {
+    width: 95%;
+  }
+  .flightContainer {
+    padding: 100px 0;
+  }
+  .storyline {
+    width: 95%;
+  }
+  .storyline .section {
+    width: 95%;
+  }
+  .question, .line {
+    width: 90%;
+  }
+  .navBar, .navBarinit, .navBarnone {
+    display: none;
+  }
+  .mobileNavinit {
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    z-index:15;
+    background: #0a1118;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobileNav {
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    z-index:15;
+    background: #0a1118;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn .5s linear;
+  }
+  .mobileNavnone {
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    z-index:15;
+    background: #0a1118;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    animation: fadeOut .5s linear;
+  }
+  .mobileLogo {
+    height: 90px;
+    padding: 0 50px;
+  }
+  .menu {
+    height: 35px;
+    padding: 0 50px;
+    cursor: pointer;
+  }
+  .dropdown {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    z-index: 20;
+    background: #dbdbdb;
+    top: 100px;
+}
+  .dropdown button {
+    width: 100%;
+    padding: 40px 0;
+    margin: 0;
+    border-radius: 0;
+  }
+  .dropdown button:hover {
+    margin: 0;
+    background: #ddd;
+  }
+  .socials img:hover {
+    margin: 0;
+  }
+}
+@media (max-width: 850px) {
+  .left, .right {
+    margin: 0;
+    width: 300px;
+  }
+  .leftText {
+    padding-right: 30px;
+  }
+  .rightText {
+    padding-left: 30px;
+  }
+  .storyline .section h1 {
+    font-size: 12px;
+  }
+  .roadmap, .teamInner, .mintInner, .header {
+    width: 95%;
+  }
+  .swiper-slide {
+    height: 180px !important;
+    width: 180px !important;
+  }
+  .mint {
+    margin-top: -90px;
+  }
+  .flightContainer {
+    padding: 150px 0 100px;
+  }
+}
+@media (max-width: 550px) {
+  .teamMember img {
+    width: 100px;
+    height: 100px;
+    margin: auto 0;
+  }
+  .headerBody {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .left, .right {
+    width: 300px;
+    margin: 10px;
+  }
+  .leftText {
+    padding-right: 0px;
+  }
+  .rightText {
+    padding-left: 0px;
+  }
+  .storyline .section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .storyline .section:nth-child(2n) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .storyline .section h1 {
+    text-align: left;
+  }
+  .storyline .section div {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+  .flightContainer ul {
+    width: 90%;
+  }
+  li {
+    font-size: 11px;
+  }
+  .footer img {
+    width: 25px;
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "mhac",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": ".",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@project-serum/anchor": "^0.22.0",
+    "@solana/pay": "^0.1.3",
+    "@solana/wallet-adapter-base": "^0.9.3",
+    "@solana/wallet-adapter-react": "^0.15.3",
+    "@solana/wallet-adapter-react-ui": "^0.9.5",
+    "@solana/wallet-adapter-wallets": "^0.15.4",
+    "@solana/web3.js": "^1.35.1",
+    "aos": "2.3.4",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-router": "^6.2.1",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "4.0.0",
+    "react-scroll": "1.8.4",
+    "react-smooth-scrolling": "1.0.2",
+    "swiper": "^8.0.3"
+  },
+  "devDependencies": {
+    "@babel/runtime": "7.13.8",
+    "typescript": "4.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
