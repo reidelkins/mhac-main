@@ -110,7 +110,7 @@ export default function Home() {
             data-aos-duration="1000"
             onClick={() => setDropdown(!dropdown)}
           >
-            <a href="https://airport.milehighapeclub.com/">Airport (Staking V2)</a>
+            <a href="https://airport.milehighapes.io/">Airport (Staking V2)</a>
           </button>
           <button
             className="navLink"
@@ -136,7 +136,7 @@ export default function Home() {
             data-aos-duration="1000"
             onClick={() => setDropdown(!dropdown)}
           >
-            <a href="https://milez.milehighapeclub.com/">$Milez Store</a>
+            <a href="https://milez.milehighapes.io">$Milez Store</a>
           </button>
           <button
             className="navLink"
@@ -144,7 +144,7 @@ export default function Home() {
             data-aos-duration="1000"
             onClick={() => setDropdown(!dropdown)}
           >
-            <a href="https://staking.milehighapeclub.com/" target="_blank">Staking</a>
+            <a href="https://staking.milehighapes.io" target="_blank">Staking</a>
           </button>
         </div>
       )
@@ -183,7 +183,7 @@ export default function Home() {
               data-aos-duration="1000"
               onClick={() => setDropdown(!dropdown)}
             >
-              <a href="https://airport.milehighapeclub.com/">Airport (Staking V2)</a>
+              <a href="https://airport.milehighapes.io">Airport (Staking V2)</a>
             </button>
             <button
               className="navLink"
@@ -214,14 +214,14 @@ export default function Home() {
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
-              <a href="https://milez.milehighapeclub.com/">$Milez Store</a>
+              <a href="https://milez.milehighapes.io">$Milez Store</a>
             </button>
             <button
               className="navLink"
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
-              <a href="https://staking.milehighapeclub.com/" target="_blank">Staking</a>
+              <a href="https://staking.milehighapes.io" target="_blank">Staking</a>
             </button>
           </div>
         </>
@@ -237,7 +237,7 @@ export default function Home() {
               data-aos-duration="1000"
               onClick={() => setDropdown(!dropdown)}
             >
-              <a href="https://airport.milehighapeclub.com/">Airport (Staking V2)</a>
+              <a href="https://airport.milehighapes.io/">Airport (Staking V2)</a>
             </button>
             <button
               className="navLink"
@@ -268,14 +268,14 @@ export default function Home() {
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
-              <a href="https://milez.milehighapeclub.com/">$Milez Store</a>
+              <a href="https://milez.milehighapes.io">$Milez Store</a>
             </button>
             <button
               className="navLink"
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
-              <a href="https://staking.milehighapeclub.com/" target="_blank">Staking</a>
+              <a href="https://staking.milehighapes.io" target="_blank">Staking</a>
             </button>
           </div>
         </>
@@ -291,7 +291,7 @@ export default function Home() {
               data-aos-duration="1000"
               onClick={() => setDropdown(!dropdown)}
             >
-              <a href="https://airport.milehighapeclub.com/">Airport (Staking V2)</a>
+              <a href="https://airport.milehighapes.io">Airport (Staking V2)</a>
             </button>
             <button
               className="navLink"
@@ -322,14 +322,14 @@ export default function Home() {
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
-              <a href="https://milez.milehighapeclub.com/">$Milez Store</a>
+              <a href="https://milez.milehighapes.io">$Milez Store</a>
             </button>
             <button
               className="navLink"
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
-              <a href="https://staking.milehighapeclub.com/" target="_blank">Staking</a>
+              <a href="https://staking.milehighapes.io" target="_blank">Staking</a>
             </button>
           </div>
         </>
@@ -358,7 +358,7 @@ export default function Home() {
           <div className="headerBody">
             <h1>MILE HIGH APE CLUB</h1>
             <h2>
-              6200 Next-Generation Mile High Apes
+              5900 Next-Generation Mile High Apes
               <br />
               Uniquely Designed and Built on the Solana Blockchain.
             </h2>
