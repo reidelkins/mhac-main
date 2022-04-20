@@ -10,7 +10,7 @@ import * as Scroll from 'react-scroll';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import * as anchor from "@project-serum/anchor";
 import { clusterApiUrl } from "@solana/web3.js";
-import { encodeURL, createQR } from '@solana/pay';
+//import { encodeURL, createQR } from '@solana/pay';
 /*import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import {
   ConnectionProvider,
